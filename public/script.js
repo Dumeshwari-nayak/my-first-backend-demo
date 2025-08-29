@@ -22,7 +22,7 @@ btn.addEventListener("click", async (event) => {
     const massage = int1.value;
 
     try {
-        const res =await fetch("/api/echo", {
+        const res =await fetch("https://my-first-backend-demo.onrender.com/api/echo", {
             method: "post",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({ massage })
